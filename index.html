@@ -1,33 +1,147 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" data-lingua="it">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andrea – Automazioni con l'AI</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #222; background: #fff; }
-    h1 { margin-bottom: 0; }
-    .sottotitolo { color: #666; margin-top: 4px; }
-    .progetto { border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin: 16px 0; }
-    footer { margin-top: 48px; font-size: 14px; color: #666; }
-  </style>
+  <meta name="description" content="Automazioni con l'intelligenza artificiale per risparmiare tempo su email, documenti e lavori ripetitivi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="lingua.js"></script>
 </head>
 <body>
-  <h1>Andrea</h1>
-  <p class="sottotitolo">Automazioni con l'intelligenza artificiale</p>
 
-  <h2>Progetti</h2>
-  <div class="progetto">
-    <h3>Riepilogo Email</h3>
-    <p>Ogni mattina legge le email nuove da Gmail, le fa riassumere da Claude (AI)
-       dividendole per urgenza e invia un unico riepilogo da leggere sul telefono.</p>
-    <p><em>Tecnologie: Python, Gmail API, Claude API, Utilità di pianificazione di Windows.</em></p>
-    <p><a href="https://github.com/andrea-automazioni/riepilogo-email">Vedi il codice e un esempio di riepilogo su GitHub →</a></p>
-  </div>
+  <header>
+    <div class="contenitore">
+      <a class="logo" href="#">andrea<span>.automazioni</span></a>
+      <nav>
+        <a href="#chi-sono"><span lang="it">Chi sono</span><span lang="en">About</span></a>
+        <a href="#servizi"><span lang="it">Servizi</span><span lang="en">Services</span></a>
+        <a href="#progetti"><span lang="it">Progetti</span><span lang="en">Projects</span></a>
+        <a href="#contatti"><span lang="it">Contatti</span><span lang="en">Contact</span></a>
+        <button class="lingua" onclick="cambiaLingua()" aria-label="Cambia lingua / Change language">
+          <span lang="it">EN</span><span lang="en">IT</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenitore">
+
+    <div class="hero">
+      <h1 lang="it">Meno lavoro ripetitivo,<br><span class="sfumato">più tempo per te.</span></h1>
+      <h1 lang="en">Less repetitive work,<br><span class="sfumato">more time for you.</span></h1>
+      <p lang="it">Creo automazioni con l'intelligenza artificiale che leggono, riassumono e organizzano email e documenti al posto tuo.</p>
+      <p lang="en">I build AI-powered automations that read, summarize and organize your emails and documents for you.</p>
+      <a class="bottone" href="#contatti"><span lang="it">Scrivimi</span><span lang="en">Get in touch</span></a>
+      <a class="bottone-secondario" href="#progetti"><span lang="it">Vedi i progetti</span><span lang="en">See projects</span></a>
+    </div>
+
+    <section id="chi-sono">
+      <div class="etichetta" lang="it">Chi sono</div>
+      <div class="etichetta" lang="en">About</div>
+      <h2>Andrea</h2>
+      <p lang="it">Costruisco automazioni con Python e con le API di AI come Claude. Il mio obiettivo è semplice: prendere un lavoro noioso che fai ogni giorno a mano e farlo fare al computer, in modo affidabile e sicuro.</p>
+      <p lang="en">I build automations with Python and AI APIs such as Claude. My goal is simple: take a boring task you do by hand every day and let the computer do it, reliably and securely.</p>
+      <p lang="it">Do molta importanza alla sicurezza dei dati: le chiavi e le password non finiscono mai nel codice, e ogni automazione tiene un diario di quello che fa.</p>
+      <p lang="en">I care about data security: keys and passwords never end up in the code, and every automation keeps a log of what it does.</p>
+    </section>
+
+    <section id="servizi">
+      <div class="etichetta" lang="it">Servizi</div>
+      <div class="etichetta" lang="en">Services</div>
+      <h2 lang="it">Cosa posso automatizzare</h2>
+      <h2 lang="en">What I can automate</h2>
+      <div class="griglia">
+        <div class="card">
+          <div class="icona">📬</div>
+          <h3 lang="it">Email</h3><h3 lang="en">Email</h3>
+          <p lang="it">Riepiloghi giornalieri, smistamento per urgenza, bozze di risposta pronte da controllare.</p>
+          <p lang="en">Daily digests, sorting by urgency, draft replies ready for your review.</p>
+        </div>
+        <div class="card">
+          <div class="icona">📄</div>
+          <h3 lang="it">Documenti</h3><h3 lang="en">Documents</h3>
+          <p lang="it">Estrarre dati da fatture, preventivi e PDF e metterli in un foglio di calcolo.</p>
+          <p lang="en">Extract data from invoices, quotes and PDFs into a spreadsheet.</p>
+        </div>
+        <div class="card">
+          <div class="icona">📊</div>
+          <h3 lang="it">Report</h3><h3 lang="en">Reports</h3>
+          <p lang="it">Report settimanali generati e inviati in automatico, scritti in modo chiaro.</p>
+          <p lang="en">Weekly reports generated and sent automatically, written in plain language.</p>
+        </div>
+        <div class="card">
+          <div class="icona">🔗</div>
+          <h3 lang="it">Collegare app</h3><h3 lang="en">Connecting apps</h3>
+          <p lang="it">Far parlare tra loro Gmail, Google Sheets, Telegram e altri servizi.</p>
+          <p lang="en">Make Gmail, Google Sheets, Telegram and other tools work together.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="progetti">
+      <div class="etichetta" lang="it">Progetti</div>
+      <div class="etichetta" lang="en">Projects</div>
+      <div class="card progetto">
+        <div>
+          <h3 lang="it">📬 Riepilogo Email con l'AI</h3>
+          <h3 lang="en">📬 AI Email Digest</h3>
+          <p lang="it">Ogni mattina legge le email nuove da Gmail, le fa riassumere da Claude dividendole per urgenza e invia un unico riepilogo da leggere in 30 secondi sul telefono.</p>
+          <p lang="en">Every morning it reads new Gmail messages, has Claude sort and summarize them by urgency, and sends a single digest you can read in 30 seconds on your phone.</p>
+          <p style="margin-top:16px">
+            <span class="tag">Python</span><span class="tag">Gmail API</span><span class="tag">Claude API</span><span class="tag">OAuth</span>
+          </p>
+          <p><a href="https://github.com/andrea-automazioni/riepilogo-email">
+            <span lang="it">Codice e dettagli su GitHub →</span><span lang="en">Code and details on GitHub →</span>
+          </a></p>
+        </div>
+        <pre lang="it">🔴 URGENTE
+- Marco (ordine Rossi): conferma consegna
+  di 3 banner entro venerdì ore 12.
+
+🟡 DA FARE
+- Fattura n. 2026/418 di 127,50 €,
+  scadenza 15 novembre.
+
+⚪ IGNORABILE
+- Newsletter promozionale.
+
+Da fare per prima: rispondere a Marco.</pre>
+        <pre lang="en">🔴 URGENT
+- Marco (Rossi order): confirm delivery
+  of 3 banners by Friday 12:00.
+
+🟡 TO DO
+- Invoice no. 2026/418, €127.50,
+  due November 15.
+
+⚪ IGNORABLE
+- Promotional newsletter.
+
+Do first: reply to Marco.</pre>
+      </div>
+    </section>
+
+    <section id="contatti" class="contatti">
+      <h2 lang="it">Hai un lavoro ripetitivo da automatizzare?</h2>
+      <h2 lang="en">Got a repetitive task to automate?</h2>
+      <p lang="it">Raccontami cosa fai ogni giorno a mano: ti dico se si può automatizzare e come.</p>
+      <p lang="en">Tell me what you do by hand every day: I'll tell you if and how it can be automated.</p>
+      <a class="bottone" href="mailto:andrea.automazioni.test@gmail.com">
+        <span lang="it">✉️ Scrivimi una email</span><span lang="en">✉️ Send me an email</span>
+      </a>
+    </section>
+
+  </main>
 
   <footer>
-    <a href="privacy.html">Informativa sulla privacy</a> ·
-    Contatti: andrea.automazioni.test@gmail.com
+    <div class="contenitore">
+      <span>© 2026 Andrea</span>
+      <a href="privacy.html"><span lang="it">Informativa sulla privacy</span><span lang="en">Privacy policy</span></a>
+    </div>
   </footer>
+
 </body>
 </html>
