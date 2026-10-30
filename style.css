@@ -32,8 +32,9 @@ header {
   border-bottom: 1px solid var(--bordo);
 }
 header .contenitore { display: flex; align-items: center; justify-content: space-between; height: 60px; }
-.logo { font-weight: 700; color: var(--testo); text-decoration: none; }
-.logo span { color: var(--accento-2); }
+.logo { font-weight: 700; color: var(--testo); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.logo img { width: 30px; height: 30px; }
+.logo b { color: var(--accento-2); font-weight: inherit; }
 nav { display: flex; gap: 20px; align-items: center; }
 nav a { color: var(--testo-tenue); text-decoration: none; font-size: 15px; }
 nav a:hover { color: var(--testo); }
