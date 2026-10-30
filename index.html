@@ -124,6 +124,42 @@ Da fare per prima: rispondere a Marco.</pre>
 
 Do first: reply to Marco.</pre>
       </div>
+      <div class="card progetto">
+        <div>
+          <h3 lang="it">🧾 Fatture PDF → Google Sheets</h3>
+          <h3 lang="en">🧾 PDF Invoices → Google Sheets</h3>
+          <p lang="it">Legge le fatture PDF di qualsiasi fornitore, ne estrae i dati con Claude, controlla che i conti tornino e li scrive in un foglio Google. Quello che non convince lo mette da parte per un controllo umano.</p>
+          <p lang="en">It reads PDF invoices from any supplier, extracts the data with Claude, checks that the numbers add up and writes them to a Google Sheet. Anything doubtful is set aside for human review.</p>
+          <p style="margin-top:16px">
+            <span class="tag">Python</span><span class="tag">Claude API</span><span class="tag">Google Sheets API</span><span class="tag">OAuth</span>
+          </p>
+          <p><a href="https://github.com/andrea-automazioni/fatture-sheets">
+            <span lang="it">Codice e dettagli su GitHub →</span><span lang="en">Code and details on GitHub →</span>
+          </a></p>
+        </div>
+        <pre lang="it">✅ INSERITA
+- Cartoleria Esempio, n. FT 1093
+  177,20 EUR, scadenza 10/12/2026
+
+✅ INSERITA
+- Example Cloud, n. INV-5521
+  49,00 USD, senza scadenza
+
+⚠️ DA CONTROLLARE
+- Preventivo Officina Esempio:
+  non è una fattura</pre>
+        <pre lang="en">✅ ADDED
+- Cartoleria Esempio, no. FT 1093
+  EUR 177.20, due 10 Dec 2026
+
+✅ ADDED
+- Example Cloud, no. INV-5521
+  USD 49.00, no due date
+
+⚠️ TO REVIEW
+- Quote from Officina Esempio:
+  not an invoice</pre>
+      </div>
     </section>
 
     <section id="contatti" class="contatti">
